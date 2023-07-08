@@ -13,7 +13,7 @@ SECRET_KEY = "django-insecure-7$ha*lcm3rlg8mi8vq&gq43qhnf+essgc&(j%go8s7=@(0v=dz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["something.solid-site.vinnica.ua"]
+ALLOWED_HOSTS = ["something.solid-site.vinnica.ua", "www.solid-site.vinnica.ua"]
 
 # ALLOWED_HOSTS = ['ImperatorNeron.pythonanywhere.com']
 # Application definition
