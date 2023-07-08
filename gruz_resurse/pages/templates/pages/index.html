@@ -15,7 +15,7 @@ Golden Gruz
     <div class="swiper swiper-1">
         <div class="swiper-wrapper">
             <div class="swiper-slide blur-copy">
-                <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.jpg' %}">
+                <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.JPG' %}">
                 <div class="item">
                     <div class="title">Зернові напівпричепи</div>
                     <div class="text">Виготовлення та продаж стандартних та індивідуально розроблених моделей з
@@ -25,7 +25,7 @@ Golden Gruz
                 </div>
             </div>
             <div class="swiper-slide blur-copy">
-                <img src="{% static 'pages/images/photos/banners/repair.jpg' %}">
+                <img src="{% static 'pages/images/photos/banners/repair.JPG' %}">
                 <div class="item">
                     <div class="title">Обслуговування</div>
                     <div class="text">Надання послуг з обслуговування, ремонту та встановлення гідравлічних
@@ -35,7 +35,7 @@ Golden Gruz
                 </div>
             </div>
             <div class="swiper-slide blur-copy">
-                <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.jpg' %}">
+                <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.JPG' %}">
                 <div class="item">
                     <div class="title">Перевезення</div>
                     <div class="text">Перевезення наливних та небезпечних вантажів усіх видів, у тому числі ADR.
@@ -44,7 +44,7 @@ Golden Gruz
                 </div>
             </div>
             <div class="swiper-slide blur-copy">
-                <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.jpg' %}">
+                <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.JPG' %}">
                 <div class="item">
                     <div class="title">Продаж палива</div>
                     <div class="text">Оптовий продаж якісного палива за привабливими цінами від виробника з ЄС.
@@ -57,10 +57,10 @@ Golden Gruz
     </div>
     <div class="swiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.jpg' %}"></div>
-            <div class="swiper-slide"><img src="{% static 'pages/images/photos/banners/repair.jpg' %}"></div>
+            <div class="swiper-slide"><img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.JPG' %}"></div>
+            <div class="swiper-slide"><img src="{% static 'pages/images/photos/banners/repair.JPG' %}"></div>
             <div class="swiper-slide"><img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_3.jpg' %}"></div>
-            <div class="swiper-slide"><img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.jpg' %}"></div>
+            <div class="swiper-slide"><img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.JPG' %}"></div>
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-prev"></div>
@@ -127,7 +127,7 @@ Golden Gruz
                 зварні роботи виконуються промисловими напівавтоматами в середовищі захисних газів.
             </div>
             <img class="middle-img"
-                 src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.jpg' %}">
+                 src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.JPG' %}">
             <div class="text">Крім того, GOLDEN GRUZ встановлює гідравлічні циліндри відомих брендів, ходову
                 частину
                 напівпричепа-причепа (осі), пневматику, електрику, допоміжні механізми для підйому осей,
@@ -161,7 +161,7 @@ Golden Gruz
                 високу оцінку свого старого напівпричепу та вигідну знижку на нову модель. Оптимальний trade-in
                 для зернових напівпричепів - наш спеціалізований сервіс.
             </div>
-            <a href="trade-in.html" class="sales-button">Переглянути</a>
+            <a href="{% url 'trade-in' %}" class="sales-button">Переглянути</a>
         </div>
     </div>
     <div class="leasing">
@@ -172,10 +172,10 @@ Golden Gruz
                 без значних витрат на придбання власною технікою. Звертайтеся до нас і ви отримаєте усе найкраще
                 з індивідуальним підходом!
             </div>
-            <a href="#" class="leasing-button">Відправити заявку</a>
+            <a href="{% url 'leasing' %}" class="leasing-button">Відправити заявку</a>
         </div>
     </div>
-    <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.jpg' %}" alt="" class="photo"
+    <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.JPG' %}" alt="" class="photo"
          height="400" width="400">
 </div>
 <div class="introduction">
