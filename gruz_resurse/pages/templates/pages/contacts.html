@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Контакти
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'pages/css/contact-form.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/contacts.css' %}">
+{% endblock %}
+{% block main %}
+<div class="banner-contact-us-container">
+    <div class="title">Наші контакти та місцезнаходження</div>
+    <img class="banner" src="{% static 'pages/images/photos/banners/banner-contact-us.jpg' %}" alt="">
+    <div class="banner-overlay"></div>
+</div>
+{% include 'includes/_contact-form.html' with form_name="Форма зворотнього зв'язку" textarea_text="Ваші питання та пропозиції" %}
+<div class="address-container">
+    <div class="company-map">
+        <div class="iframe-company-name">LLC "GOLDEN GRUZ"</div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1298.6157750658654!2d34.98889928884749!3d48.466966210527175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe3ae293de9a5%3A0x7383d13eacdca40!2z0LLRg9C70LjRhtGPINCe0YDQu9C-0LLRgdGM0LrQsCwgMjEsINCU0L3RltC_0YDQviwg0JTQvdGW0L_RgNC-0L_QtdGC0YDQvtCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDQ5MDAw!5e1!3m2!1suk!2sua!4v1688809704136!5m2!1suk!2sua"
+                class="iframe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <div class="address-info">
+        <div class="title">Де ви можете нас знайти?</div>
+        <div class="address">Вулиця Орловська, 21, Дніпро, Дніпропетровська область</div>
+    </div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="{% static 'pages/js/files.js' %}"></script>
+{% endblock %}

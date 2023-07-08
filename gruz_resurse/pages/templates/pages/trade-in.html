@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Golden Gruz trade-in
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'pages/css/leasing-and-trade-in.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/contact-form.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/banner.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/introduction.css' %}">
+{% endblock %}
+{% block main %}
+<img src="{% static 'pages/images/photos/banners/trade-in-picture.jpg' %}" alt="" class="banner">
+<div class="introduction">
+    <div class="title">Golden Gruz trade-in</div>
+    <div class="text">Змініть свій напівпричіп на нову комерційну техніку за допомогою послуги
+        "Trade-in". Будь-який власник транспортного засобу, незалежно від бренду, може скористатися цією
+        послугою. Відтепер послуга доступна від компанії GOLDEN GRUZ.
+    </div>
+</div>
+<div class="what-title">ЩО ТАКЕ ТРЕЙД-ІН ВІД GOLDEN GRUZ</div>
+<div class="what-is">
+    <div class="container-explain">
+        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.jpg' %}" alt="" class="photo">
+        <div class="text">Простий та зрозумілий механізм, який дозволяє здати існуючий напівпричіп на рахунок
+            нового. Це можна зробити прямо зараз.
+        </div>
+    </div>
+    <div class="container-explain">
+        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_3.jpg' %}" alt="" class="photo">
+        <div class="text">Кваліфіковані фахівці проведуть діагностику та оцінять ваш транспортний засіб належним
+            чином.
+        </div>
+    </div>
+    <div class="container-explain">
+        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_6.jpg' %}" alt="" class="photo">
+        <div class="text">Ми запропонуємо справедливу ціну за його викуп, і ця сума стане першим внеском за нову
+            комерційну техніку GOLDEN GRUZ.
+        </div>
+    </div>
+</div>
+<div class="advantages-title">НАШІ ПЕРЕВАГИ</div>
+<div class="advantages">
+    <div class="advantage">
+        <div class="advantage-header">
+            <img src="{% static 'pages/images/icons/fast-time.png' %}" alt="" class="icon">
+            <div class="title">Ми цінимо час клієна</div>
+        </div>
+        <div class="text">Угода займає не більше двох днів. Ви зразу приступаєте до роботи на новому
+            напівпричепі, не чекаючи продажу старого.
+        </div>
+    </div>
+    <div class="advantage">
+        <div class="advantage-header">
+            <img src="{% static 'pages/images/icons/shield.png' %}" alt="" class="icon">
+            <div class="title">Ризики зведені до мінімуму</div>
+        </div>
+        <div class="text">Зміна попиту на ринку або довгострокова реалізація наявного напівпричепа не стануть
+            для вас проблемою.
+        </div>
+    </div>
+    <div class="advantage">
+        <div class="advantage-header">
+            <img src="{% static 'pages/images/icons/coin.png' %}" alt="" class="icon">
+            <div class="title">Переконлива перевага</div>
+        </div>
+        <div class="text">Спеціальні умови на придбання нової комерційної техніки Grunwald подарують вам
+            додаткову перевагу.
+        </div>
+    </div>
+</div>
+{% include 'includes/_contact-form.html' with form_name="Форма заявки trade-in" textarea_text="Опишіть вашу техніку та техніку, яку хочете обміняти" %}
+{% endblock %}
+{% block js %}
+<script src="{% static 'pages/js/files.js' %}"></script>
+{% endblock %}

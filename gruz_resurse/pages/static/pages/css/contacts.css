@@ -1,0 +1,139 @@
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.banner-contact-us-container {
+    position: relative;
+    display: inline-block;
+    margin: 70px 0 50px 0;
+}
+
+.banner-contact-us-container .title {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2.2rem;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.6); /* кольоровий фільтр для затемнення */
+}
+
+.address-container{
+    display: flex;
+    gap: 70px;
+    padding: 30px 70px 100px 70px;
+}
+
+.address-info .title{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.company-map{
+    width: 70%;
+    height: 350px;
+}
+
+.iframe-company-name{
+    background-color: #1d2228;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+}
+
+iframe{
+    height: 100%;
+    width: 100%;
+}
+
+.address-info .address{
+    font-size: 1.3rem;
+    line-height: 25px;
+}
+
+@media (max-width: 1279px) {
+    .banner-contact-us-container .title{
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+@media (max-width: 1079px) {
+    .address-container{
+        padding: 0 15px 100px 15px;
+        flex-direction: column-reverse;
+    }
+
+    .company-map{
+        width: 100%;
+    }
+
+    .address-info .title{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .address-info .address{
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .address-container{
+        gap: 15px;
+    }
+
+    .banner {
+        height: 350px;
+    }
+
+    .banner-overlay {
+        height: 350px;
+    }
+}
+
+@media (max-width: 800px) {
+    .banner {
+        height: 270px;
+    }
+    .banner-overlay {
+        height: 270px;
+    }
+}
+
+@media (max-width: 700px){
+    .banner-contact-us-container .title{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 630px) {
+    .banner {
+        height: 230px;
+    }
+
+    .banner-overlay {
+        height: 230px;
+    }
+}
+
+

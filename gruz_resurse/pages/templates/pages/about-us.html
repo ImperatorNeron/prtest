@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Про компанію
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'pages/css/semi-trailers-attention.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/contact-form.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/banner.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/introduction.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/about-us.css' %}">
+{% endblock %}
+{% block main %}
+<img src="{% static 'pages/images/photos/banners/about-company.png' %}" alt="" class="banner">
+<div class="introduction">
+    <div class="title">Golden Gruz - ваш надійний партнер у сфері транспортних рішень.</div>
+    <div class="text">
+        Golden Gruz - це професіоналізм, досвід та високий стандарт обслуговування. Ми пишаємося тим, що є вашим
+        надійним партнером у справах, пов'язаних з напівпричепами-самоскидами, перевезенням небезпечних вантажів,
+        продажем палива, ремонтом та обслуговуванням транспортних засобів. Наша мета - задовольнити всі ваші потреби
+        і досягти вершин у цих галузях.
+    </div>
+    <a href="{% url 'contacts' %}" class="button">Отримати найкраще</a>
+
+</div>
+<div class="semi-trailer-container">
+    <div class="semi-trailer-blocks-wrapper">
+        <div class="semi-trailer-block-1">
+            <div class="title">
+                <div class="img-wrapper">
+                    <img src="{% static 'pages/images/icons/customer-support.png' %}" height="35" width="35">
+                </div>
+                <div class="text">Чим ми займаємося</div>
+            </div>
+            <div class="text">
+                <p>Наші головні види ремонту включають:</p>
+                <ol>
+                    <li>
+                        Виробництво напівпричепи-самоскиди:
+                        Ми розробляємо та виготовляємо надійні напівпричепи-самоскиди, які дозволяють
+                        ефективно перевозити вантажі, такі як зерно, щебінь тощо.
+                    </li>
+                    <li>
+                        Перевезення небезпечних вантажів:
+                        Маючи досвід у перевезенні небезпечних вантажів, ми гарантуємо безпеку та дотримання всіх
+                        вимог
+                        законодавства. Наші спеціалізовані транспортні засоби та кваліфіковані водії забезпечують
+                        надійне та
+                        безпечне перевезення як в межах України, так і в Європі.
+                    </li>
+                    <li>
+                        Продаж палива оптом:
+                        Ми є провідним постачальником палива Orlen класу Євро-5. Завдяки
+                        надійним партнерам та великим обсягам постачання, ми пропонуємо конкурентні ціни та
+                        гарантуємо
+                        доставлення у
+                        разі потреби
+                    </li>
+                    <li>
+                        Ремонт та обслуговування:
+                        Наша компанія надає широкий спектр ремонтних послуг для тягачів і напівпричепів. Завдяки
+                        комп'ютерній
+                        діагностиці та кваліфікованому персоналу, ми забезпечуємо швидке та точне виявлення проблем
+                        та
+                        ефективний
+                        ремонт.
+                    </li>
+                    <li>
+                        Leasing та trade-in:
+                        Ми пропонуємо можливість лізингу, що дозволяє купити техніку без значних інвестицій.
+                        Також ми надаємо програму trade-in, де ви можете обміняти свою стару
+                        техніку на нову, сприяючи оновленню вашого транспортного парку.
+                    </li>
+                </ol>
+            </div>
+            <div class="learn-about-buttons">
+                <a href="{% url 'services' %}">Переглянути усі види сервісу</a>
+                <a href="{% url 'contacts' %}">Зв'язатися з нами</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+a.dropdown-item{
+    padding: 5px 15px;
+}
+
+.phone-number a{
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 991.98px) {
+    .container-fluid{
+        padding: 8px 0;
+    }
+
+    .navbar-nav{
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 334px){
+    a.dropdown-item{
+        font-size: 0.8rem;
+        padding: 5px 7px;
+    }
+}

@@ -1,0 +1,302 @@
+.advantages-block{
+    margin-bottom: 70px;
+}
+
+.our-advantages-title {
+    margin-left: 100px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.advantages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    margin: 30px 110px 70px 110px;
+}
+
+.advantage {
+    display: flex;
+    gap: 20px;
+    height: 72px;
+}
+
+.advantage .text {
+    display: flex;
+    align-items: center;
+}
+
+.add-title-1,
+.add-title-2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.add-title-2 {
+    color: red;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.business {
+    display: grid;
+    grid-template-columns: 5fr 3fr 1fr;
+    height: 400px;
+}
+
+.business .photo {
+    object-fit: cover;
+    object-position: center;
+}
+
+.sales {
+    background-color: #ffffff;
+}
+
+.business .photo,
+.sales,
+.leasing {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.leasing {
+    height: 400px;
+    background-color: #eeeeee;
+    transform: skew(-20deg);
+    margin: 0 -130px 0 -100px;
+}
+
+.leasing-help {
+    transform: skew(20deg);
+}
+
+.sales-help {
+    padding: 50px 160px 0 50px;
+}
+
+.leasing-help {
+    padding: 50px 90px 0 100px;
+}
+
+.sales-help,
+.leasing-help {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.leasing-title,
+.sales-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.sales-button,
+.leasing-button {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+    padding: 13px;
+    transition-duration: 0.3s;
+}
+
+.sales-button:hover,
+.leasing-button:hover {
+    background-color: rgb(0, 0, 0);
+    transition-duration: 0.3s;
+}
+
+.services-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    padding: 0 50px 80px 50px;
+}
+
+.custom-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: auto;
+}
+
+.custom-card-img {
+    width: 500px;
+    height: 300px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.custom-card-img-wrapper {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0 50px;
+}
+
+.icon {
+    filter: invert(1)
+}
+
+.overlay div {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.custom-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1230px) {
+    .business .photo {
+        display: none;
+    }
+
+    .business {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .leasing {
+        height: auto;
+    }
+
+    .leasing-help {
+        padding: 0;
+    }
+
+    .leasing {
+        transform: skew(0deg);
+        margin: 0;
+        border-top: none;
+    }
+
+    .leasing-help {
+        transform: skew(0deg);
+    }
+
+    .sales-help,
+    .leasing-help {
+        padding: 50px;
+    }
+
+    .sales-button,
+    .leasing-button {
+        width: auto;
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .advantages {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1150px) {
+    .custom-cards {
+        grid-template-columns: 1fr;
+        margin: 0 110px;
+    }
+
+    .custom-card-img {
+        width: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 970px) {
+    .services-cards {
+        padding: 0 0 50px 0;
+    }
+}
+
+@media (max-width: 920px) {
+    .advantages {
+        margin: 30px 0 50px 0;
+    }
+
+    .our-advantages-title {
+        margin: 0;
+        font-size: 1.6rem;
+    }
+
+    .advantages-block {
+        margin: 0 15px 80px 15px;
+    }
+}
+
+@media (max-width: 710px) {
+    .custom-cards {
+        margin: 0 15px;
+    }
+
+    .overlay {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    .overlay div {
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .advantages {
+        grid-template-columns: 1fr;
+        margin-left: 30px;
+        gap: 50px;
+    }
+
+    .advantage .text {
+        max-width: 260px;
+    }
+
+    .add-title-1,
+    .add-title-2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .advantages {
+        margin-left: 15px;
+    }
+
+    .our-advantages-title {
+        font-size: 1.3rem;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 450px){
+    .sales-help,
+    .leasing-help {
+        padding: 50px 20px;
+    }
+}

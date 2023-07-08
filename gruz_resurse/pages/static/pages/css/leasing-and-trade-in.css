@@ -1,0 +1,197 @@
+.container-little-about {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 65px 250px 100px 250px;
+}
+
+.container-little-about .title {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.container-little-about .text {
+    padding-right: 300px;
+    line-height: 25px;
+}
+
+.what-title,
+.advantages-title {
+    font-size: 1.7rem;
+    padding: 0 250px 50px 250px;
+    font-weight: 600;
+}
+
+.what-is,
+.advantages {
+    display: flex;
+    gap: 35px;
+}
+
+.what-is,
+.advantages {
+    padding: 0 150px 100px 150px;
+}
+
+.container-explain, .advantage{
+    flex: 1;
+}
+
+.container-explain .text {
+    line-height: 25px;
+}
+
+.container-explain .photo {
+    margin-bottom: 40px;
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.advantage {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.advantage-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.advantage-header .title {
+    font-size: 1.7rem;
+    line-height: 40px;
+    flex: 1;
+}
+
+.advantage .icon {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+}
+
+.advantage .text {
+    line-height: 25px;
+}
+
+@media (max-width: 1279px) {
+    .container-little-about .text {
+        padding-right: 0;
+    }
+
+    .what-is,
+    .advantages {
+        padding: 0 70px 100px 70px;
+    }
+}
+
+@media (max-width: 1079px) {
+    .advantages {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: left;
+    }
+
+    .advantage {
+        width: auto;
+        gap: 25px;
+    }
+
+    .what-is,
+    .advantages {
+        padding: 0 30px 100px 30px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .advantages {
+        gap: 60px;
+    }
+
+    .container-little-about {
+        padding: 65px 15px 100px 15px;
+    }
+
+    .what-title,
+    .advantages-title {
+        padding: 0 15px 35px 15px;
+    }
+
+    .what-is {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .container-explain .photo {
+        margin-bottom: 20px;
+    }
+
+    .container-explain .text {
+        font-size: 1.3rem;
+    }
+
+    .banner {
+        background-position: left;
+    }
+
+}
+
+@media (max-width: 665px) {
+    .advantage {
+        width: 100%;
+    }
+
+    .container-little-about {
+        padding: 55px 15px 60px 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    .container-explain .text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .container-little-about .title {
+        font-size: 1.7rem;
+    }
+
+    .what-title {
+        font-size: 1.4rem;
+    }
+
+    .what-is {
+        padding: 0 15px 100px 15px;
+    }
+
+    .container-explain .text {
+        font-size: 0.9rem;
+    }
+
+    .advantages-title {
+        font-size: 1.4rem;
+    }
+
+    .advantage-header .icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .advantage-header .title {
+        font-size: 1.2rem;
+        line-height: 22px;
+    }
+
+    .advantage .text {
+        font-size: 0.9rem;
+    }
+
+    .container-explain .photo {
+        min-width: 100px;
+    }
+}

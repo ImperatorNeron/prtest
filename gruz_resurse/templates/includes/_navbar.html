@@ -1,0 +1,54 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow fixed-top">
+    <div class="container-fluid px-4">
+        <a class="navbar-brand" href="{% url 'index' %}">
+            <img src="{% static 'pages/images/icons/logo-name.svg' %}" alt="" width="80">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item p-2">
+                    <a class="nav-link" aria-current="page" href="{% url 'product' %}">Продукція</a>
+                </li>
+                <li class="nav-item dropdown p-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Сервіс
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{% url 'attention' %}">Обслуговування</a></li>
+                        <li><a class="dropdown-item" href="{% url 'trade-in' %}">Trade-in</a></li>
+                        <li><a class="dropdown-item" href="{% url 'leasing' %}">Leasing</a></li>
+                        <li><a class="dropdown-item" href="{% url 'danger' %}">Доставка небезпечних вантажів</a></li>
+                        <li><a class="dropdown-item" href="{% url 'fuel' %}">Оптовий продаж палива</a></li>
+                        <li><a class="dropdown-item" href="{% url 'computer-diagnostic' %}">Комп'ютерна діагностика</a>
+                        <li><a class="dropdown-item" href="{% url 'trucks' %}">Ремонт та продаж вантажівок</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="{% url 'services' %}">Усі послуги</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" aria-current="page" href="{% url 'about' %}">Про компанію</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link" href="{% url 'contacts' %}">Контакти</a>
+                </li>
+            </ul>
+            <div class="nav-item d-flex justify-content-center px-4 phone-number">
+                <a href="tel:+380962228790">+38 (095) 15 15 315</a>
+            </div>
+            <div class="nav-item d-flex justify-content-center gap-3">
+                {% include 'includes/_social_media_icons.html' with img_url='pages/images/icons/facebook.png' %}
+                {% include 'includes/_social_media_icons.html' with img_url='pages/images/icons/instagram.png' %}
+                {% include 'includes/_social_media_icons.html' with img_url='pages/images/icons/telegram.png' %}
+            </div>
+        </div>
+    </div>
+</nav>

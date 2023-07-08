@@ -1,0 +1,36 @@
+{% load static %}
+
+<div class="form-container">
+    <div class="left-part">
+        <div class="title">{{ form_name }}</div>
+        <div class="text">Зв'яжіться з нами, заповнивши форму або напишіть на <b>goldengruz534@gmail.com</b>.
+            Також ви
+            можете зателефонувати за номером <b><a href="#">+38 (095) 151-53-15</a></b>.
+        </div>
+    </div>
+    <div class="right-part">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {% if form.errors %}
+            <div onclick="this.style.display = 'none'" class="message-to-user">Невірно введені дані, повідомлення не
+                надіслалося!
+            </div>
+            {% endif %}
+            {{ form.name }}
+            <div class="error-block">{{ form.name.errors }}</div>
+            {{ form.email }}
+            <div class="error-block">{{ form.email.errors }}</div>
+            {{ form.phone_number }}
+            <div class="error-block">{{ form.phone_number.errors }}</div>
+            <textarea name="message" id="id_message" placeholder="{{ textarea_text }}" class="form-field"
+                      required></textarea>
+            <div class="error-block">{{ form.message.errors }}</div>
+            <label class="form-field f-4">
+                <input type="file" name="photos" id="id_photos" multiple="multiple" onchange="updateFileName(this)">
+                <span>Натисність та завантажте фото</span>
+            </label>
+            <div class="error-block">{{ form.photos.errors }}</div>
+            <button class="custom-btn" type="submit">Відправити</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Комп'ютерна діагностика
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'pages/css/computer-diagnostic.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/contact-form.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/banner.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/introduction.css' %}">
+{% endblock %}
+{% block main %}
+<img class="banner" src="{% static 'pages/images/photos/banners/computer-analysis.jpg' %}">
+<div class="introduction">
+    <div class="title">Комп'ютерна діагностика вантажівок</div>
+    <div class="text">У світі вантажних автомобілів, де постійна працездатність та уникнення несподіваних
+        поломок мають вирішальне значення, діагностика є невід'ємною частиною забезпечення їх ефективної роботи.
+        Тому компанія Golden Gruz, надає послугу
+        комп'ютерної діагностики як одну з ключових послуг у своєму асортименті автосервісних рішень.
+    </div>
+</div>
+<div class="container-about-adr">
+    <img src="{% static 'pages/images/photos/banners/analysis.jpg' %}">
+    <div class="container-text">
+        <div class="title">Основні напрямки</div>
+        <ul>
+            <li>Первинна комп’ютерна діагностика</li>
+            <li>Процес отримання та дешифрування діагностичних кодів несправностей з електронних блоків
+                управління автомобілем.
+            </li>
+            <li>Комплексна комп’ютерна діагностика</li>
+            <li>Виконання різноманітних тестів, які допоможуть отримати найбільш повну інформацію про стан
+                вашого автомобіля та його систем.
+            </li>
+            <li>Детальний аналіз системи управління двигуном автомобіля</li>
+            <li>Здійснення комплексу спеціально підібраних тестів і випробувань, які надають найбільш повну
+                інформацію щодо робочих параметрів двигуна вашого автомобіля.
+            </li>
+            <li>Перевірка та налаштування показників датчиків, а також проведення випробувань для оцінки їхньої
+                роботи.
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="addition-services">
+    <div class="title">Також ми можемо провести якісну діагностику окремих блоків:</div>
+    <div class="analisys-list">
+        <div class="list-block">
+            <div class="number">1</div>
+            <div class="text">Перевірка центрального комп'ютера (ЕБУ)</div>
+        </div>
+        <div class="list-block">
+            <div class="number">2</div>
+            <div class="text">Перевірка пневмосистеми</div>
+        </div>
+        <div class="list-block">
+            <div class="number">3</div>
+            <div class="text">Перевірка систем AdBlue</div>
+        </div>
+        <div class="list-block">
+            <div class="number">4</div>
+            <div class="text">Перевірка герметичності системи, роботи датчиків, блоків, їх параметрування.</div>
+        </div>
+        <div class="list-block">
+            <div class="number">5</div>
+            <div class="text">Перевірка і калібровка показників датчиків. Проведення тестів.</div>
+        </div>
+        <div class="list-block">
+            <div class="number">6</div>
+            <div class="text">Cкидання міжсервісних інтервалів</div>
+        </div>
+        <div class="list-block">
+            <div class="number">7</div>
+            <div class="text">Видалення міжсервісних інтервалів після технічного обслуговування.
+            </div>
+        </div>
+        <div class="list-block">
+            <div class="number">8</div>
+            <div class="text">Проведення калібровки тахографа, заміна оливи, заміна технічних рідин, фільтрів,
+                гальмівних колодок тощо.
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'includes/_contact-form.html' with form_name="Записатися на діагностику" textarea_text="Опишіть вашу потребу" %}
+{% endblock %}
+{% block js %}
+<script src="{% static 'pages/js/files.js' %}"></script>
+{% endblock %}

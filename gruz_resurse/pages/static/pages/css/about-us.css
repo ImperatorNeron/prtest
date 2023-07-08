@@ -1,0 +1,37 @@
+.container-about-adr{
+    background-color: rgb(233, 233, 233);
+    padding: 70px 0;
+    margin: 0;
+}
+
+.introduction .button{
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(203, 203, 203);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition-duration: 0.2s;
+}
+
+.introduction .button:hover{
+    background-color: rgb(183, 183, 183);
+    transition-duration: 0.2s;
+}
+
+.banner{
+    object-position: center;
+}
+
+@media (max-width: 1280px){
+    .container-about-adr{
+        padding: 70px 15px;
+    }
+}
+
+@media (max-width: 550px){
+    .introduction .button{
+        width: auto;
+    }
+}

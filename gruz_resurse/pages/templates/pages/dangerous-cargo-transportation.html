@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Доставка небезпечних вантажів
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'pages/css/fuel.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/contact-form.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/banner.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/introduction.css' %}">
+{% endblock %}
+{% block main %}
+<img src="{% static 'pages/images/photos/banners/fuel_car.jpg' %}" alt="" class="banner">
+<div class="introduction">
+    <div class="title">Доставка небезпечних вантажів</div>
+    <div class="text">GOLDEN GRUZ - професіонали з перевезення небезпечних вантажів будь-яких видів. Ми
+        гарантуємо безпеку та надійність перевезень, використовуючи спеціальну техніку та упаковки. Наші
+        спеціалісти забезпечать правильне оформлення всіх документів та дотримання усіх вимог. Довірте
+        небезпечний вантаж професіоналам GOLDEN GRUZ.
+    </div>
+</div>
+<div class="container-about-adr">
+    <img src="{% static 'pages/images/photos/banners/deliver_1.jpg' %}" alt="">
+    <div class="container-text">
+        <div class="title">Перевезення будь-яких небезпечних вантажів!</div><br>
+        <ol>
+            <li>Небезпечні речовини, які можуть вибухати і призводити до пожежі.</li>
+            <li>Різні види газів і їх суміші.</li>
+            <li>Речовини, які вивільняють легкозаймисті пари з температурою спалаху до 61 °С.</li>
+            <li>Речовини, які можуть легко спалахнути від мимовільних хімічних перетворень, при нагріванні або
+                терті.
+            </li>
+            <li>Окислюючі речовини й органічні перекиси, які вивільняють кисень й мають особливість
+                самозайматися.
+            </li>
+            <li>Отруйні й інфекційні речовини, які при попаданні в організм людини можуть завдати непоправної
+                шкоди й привести навіть до смерті.
+            </li>
+            <li>Радіоактивні речовини.</li>
+            <li>Корозійні, їдкі речовини, що ушкоджують органи людини, викликають ушкодження металу
+                автотранспорту й різних об’єктів.
+            </li>
+            <li>Інші речовини, що вимагають спеціальних умов транспортування.</li>
+        </ol>
+    </div>
+</div>
+{% include 'includes/_contact-form.html' with form_name="Форма заявки на перевезення" textarea_text="Опишіть вашу потребу" %}
+{% endblock %}
+{% block js %}
+<script src="{% static 'pages/js/files.js' %}"></script>
+{% endblock %}

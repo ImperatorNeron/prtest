@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Golden Gruz leasing
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'pages/css/leasing-and-trade-in.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/contact-form.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/banner.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/introduction.css' %}">
+{% endblock %}
+{% block main %}
+<img src="{% static 'pages/images/photos/banners/leasing-picture.jpg' %}" alt="" class="banner">
+<div class="introduction">
+    <div class="title">Golden Gruz leasing</div>
+    <div class="text">Компанія GOLDEN GRUZ пропонує не тільки послугу "Trade-in", але й можливість отримати
+        лізинг на нову комерційну техніку. Лізинг - це фінансова послуга, яка дозволяє користувачам отримати
+        доступ до необхідної техніки без необхідності великих витрат на її придбання.
+    </div>
+</div>
+<div class="what-title">ЩО ТАКЕ LEASING ВІД GOLDEN GRUZ</div>
+<div class="what-is">
+    <div class="container-explain">
+        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_11.jpg' %}" alt="" class="photo">
+        <div class="text">Ви здійснюєте пряму покупку від виробника, при цьому зберігаєте оборотні кошти
+            компанії та оптимізуєте оподаткування. Забезпечте свій бізнес новим транспортом та сплачуйте за
+            нього потім.
+        </div>
+    </div>
+    <div class="container-explain">
+        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_12.jpg' %}" alt="" class="photo">
+        <div class="text">Швидко та комфортно. Прийняття рішення щодо фінансування - від 3 днів. Індивідуальні
+            умови при придбанні парку. Ваша покупка буде доставлена до зазначеного місця.
+        </div>
+    </div>
+    <div class="container-explain">
+        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_13.jpg' %}" alt="" class="photo">
+        <div class="text">Внесіть існуючий напівпричіп як аванс, скориставшись послугою Трейд-Ін. Після
+            закінчення терміну лізингу обміняйте напівпричіп на новий, знову скориставшись програмою Трейд-Ін.
+        </div>
+    </div>
+</div>
+<div class="advantages-title">НАШІ ПЕРЕВАГИ</div>
+<div class="advantages">
+    <div class="advantage">
+        <div class="advantage-header">
+            <img src="{% static 'pages/images/icons/contribution.png' %}" alt="" class="icon">
+            <div class="title">Мінімальний внесок</div>
+        </div>
+        <div class="text">Наші гнучкі умови фінансування дозволяють зменшити початкові витрати на комерційну
+            техніку з 5% авансу.
+        </div>
+    </div>
+    <div class="advantage">
+        <div class="advantage-header">
+            <img src="{% static 'pages/images/icons/payment-method.png' %}" alt="" class="icon">
+            <div class="title">Зручні платежі</div>
+        </div>
+        <div class="text">Графік платежів включає страхування КАСКО для комфорту та захисту вашого бізнесу.
+            Забудьте про великі початкові витрати та насолоджуйтесь новим обладнанням з впевненістю в його
+            безпеці.
+        </div>
+    </div>
+    <div class="advantage">
+        <div class="advantage-header">
+            <img src="{% static 'pages/images/icons/schedule.png' %}" alt="" class="icon">
+            <div class="title">Ми беремо до уваги все</div>
+        </div>
+        <div class="text">Гнучкий графік платежів враховує сезонність транспортного бізнесу для збереження
+            фінансової стабільності.
+        </div>
+    </div>
+</div>
+{% include 'includes/_contact-form.html' with form_name="Форма заявки leasing" textarea_text="Опишіть вашу техніку та техніку, яку хочете взяти в лізинг" %}
+{% endblock %}
+{% block js %}
+<script src="{% static 'pages/js/files.js' %}"></script>
+{% endblock %}

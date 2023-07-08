@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Продаж палива оптом
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'pages/css/fuel.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/contact-form.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/banner.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/introduction.css' %}">
+{% endblock %}
+{% block main %}
+<img src="{% static 'pages/images/photos/banners/fuel_car.jpg' %}" alt="" class="banner">
+<div class="introduction">
+    <div class="title">Паливо Orlen класу Євро 5, Литва</div>
+    <div class="text">Golden Gruz - ваш надійний постачальник палива Orlen євро-5 в Україні. Ми з гордістю
+        представляємо цей високоякісний вид палива, який відповідає найсуворішим екологічним стандартам. Наша
+        компанія має широкий досвід в постачанні палива для різних секторів, включаючи автомобільний транспорт,
+        сільське господарство та промисловість. Ми привозимо це паливо з Литви, забезпечуючи його високу якість
+        та належне зберігання протягом транспортування.
+    </div>
+</div>
+<div class="container-about-adr">
+    <img src="{% static 'pages/images/photos/banners/deliver_2.jpg' %}" alt="">
+    <div class="container-text">
+        <div class="title">
+            <p>Про купівлю і доставку</p>
+        </div>
+        <div>
+            <p>
+                Наша компанія пропонує різні способи доставки палива. Завдяки великій кількості машин-цистерн ми можемо забезпечити доставку палива прямо до вашого складу або будь-якого вказаного вами місця. Також у вас є можливість самостійно забрати паливо з наших цистерн в зручний для вас час.
+            </p>
+            <p>
+                Закупівля палива у нас проста і зручна. Ви можете зв'язатися з нами і уточнити
+                наявність палива Orlen євро-5, обсяги, ціни та умови поставки. Ми також пропонуємо гнучкі
+                умови платежів та можливість укладання довгострокових договорів для постійних клієнтів, що означають приємні бонуси у вигляді знижок.
+            </p>
+        </div>
+    </div>
+</div>
+
+{% include 'includes/_contact-form.html' with form_name="Форма заявки на покупку палива" textarea_text="Опишіть вашу потребу" %}
+{% endblock %}
+{% block js %}
+<script src="{% static 'pages/js/files.js' %}"></script>
+{% endblock %}

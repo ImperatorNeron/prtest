@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Усі сервіси
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'pages/css/services.css' %}">
+{% endblock %}
+{% block main %}
+<div class="service-cards">
+    <a class="service-card" href="attention.html">
+        <div class="service-card-img-wrapper">
+            <img class="service-card-img"
+                 src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.jpg' %}" alt="">
+            <div class="overlay">
+                <img src="{% static 'pages/images/icons/customer-support.png' %}" class="icon" alt="" width="60">
+                <div>Обслуговування</div>
+            </div>
+        </div>
+    </a>
+    <a class="service-card" href="trade-in.html">
+        <div class="service-card-img-wrapper">
+            <img class="service-card-img"
+                 src="{% static 'pages/images/photos/banners/trade-in.jpg' %}" alt="">
+            <div class="overlay">
+                <img src="{% static 'pages/images/icons/trade.png' %}" class="icon" alt="" width="60">
+                <div>Trade-in</div>
+            </div>
+        </div>
+    </a>
+    <a class="service-card" href="leasing.html">
+        <div class="service-card-img-wrapper">
+            <img class="service-card-img"
+                 src="{% static 'pages/images/photos/banners/leasing.jpg' %}" alt="">
+            <div class="overlay">
+                <img src="{% static 'pages/images/icons/key.png' %}" class="icon" alt="" width="60">
+                <div>Leasing</div>
+            </div>
+        </div>
+    </a>
+    <a class="service-card" href="transportation.html">
+        <div class="service-card-img-wrapper">
+            <img class="service-card-img"
+                 src="{% static 'pages/images/photos/banners/tanker.jpg' %}" alt="">
+            <div class="overlay">
+                <img src="{% static 'pages/images/icons/test.png' %}" class="icon" alt="" width="60">
+                <div>Доставка небезпечних вантажів</div>
+            </div>
+        </div>
+    </a>
+    <a class="service-card" href="#">
+        <div class="service-card-img-wrapper">
+            <img class="service-card-img"
+                 src="{% static 'pages/images/photos/banners/fuel.jpg' %}" alt="">
+            <div class="overlay">
+                <img src="{% static 'pages/images/icons/petrol-station.png' %}" class="icon" alt="" width="60">
+                <div>Оптовий продаж палива</div>
+            </div>
+        </div>
+    </a>
+    <a class="service-card" href="trucks_diagnostics.html">
+        <div class="service-card-img-wrapper">
+            <img class="service-card-img"
+                 src="{% static 'pages/images/photos/banners/computer-diagnostic.jpg' %}" alt="">
+            <div class="overlay">
+                <img src="{% static 'pages/images/icons/analysis.png' %}" class="icon" alt="" width="60">
+                <div>Діагностика вантажівок</div>
+            </div>
+        </div>
+    </a>
+</div>
+{% endblock %}

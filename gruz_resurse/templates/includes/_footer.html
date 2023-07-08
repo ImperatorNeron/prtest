@@ -1,0 +1,50 @@
+{% load static %}
+
+<footer>
+    <div class="company-block">
+        <a href="{% url 'index' %}"><img src="{% static 'pages/images/icons/logo-name.svg' %}" width="150"></a>
+        <div class="text">Компанія "Golden Gruz" - довгостроковий партнер та надійний провідник в сфері
+            напівпричепів, перевезень та ремонту тягачів.
+        </div>
+        <div class="copyrights">
+            <div>© 2023 Golden Gruz, Україна. Всі права захищені.</div>
+            <a href="golden-gruz.com.ua">golden-gruz.com.ua</a>
+        </div>
+    </div>
+    <div class="quick-links-block">
+        <div class="quick">
+            <div>Навігація</div>
+            <img class="first-quick" src="{% static 'pages/images/icons/arrow-down-sign-to-navigate.png' %}" height="20" width="20">
+        </div>
+        <div class="quick-links">
+            <a href="{% url 'product' %}">Продукція</a>
+            <a href="{% url 'services' %}">Сервіс</a>
+            <a href="{% url 'about' %}">Про компанію</a>
+            <a href="{% url 'contacts' %}">Контакти</a>
+        </div>
+    </div>
+    <div class="quick-links-block">
+        <div class="quick">
+            <div>Послуги</div>
+            <img class="second-quick" src="{% static 'pages/images/icons/arrow-down-sign-to-navigate.png' %}" height="20" width="20">
+        </div>
+        <div class="quick-links">
+            <a href="{% url 'attention' %}">Обслуговування</a>
+            <a href="{% url 'trade-in' %}">Trade-in</a>
+            <a href="{% url 'leasing' %}">Leasing</a>
+            <a href="{% url 'danger' %}">Доставка небезпечних вантажів</a>
+            <a href="{% url 'fuel' %}">Оптовий продаж палива</a>
+            <a href="{% url 'computer-diagnostic' %}">Діагностика вантажівок</a>
+            <a href="{% url 'trucks' %}">Ремонт та продаж вантажівок</a>
+        </div>
+    </div>
+    <div class="social-media-block">
+        <div class="sm-title">Cоціальні мережі</div>
+        <div class="our-sm">
+            <a href="#"><img src="{% static 'pages/images/icons/instagram.png' %}" height="40"></a>
+            <a href="#"><img src="{% static 'pages/images/icons/telegram.png' %}" height="40"></a>
+            <a href="#"><img src="{% static 'pages/images/icons/facebook.png' %}" height="40"></a>
+        </div>
+        <a href="{% url 'contacts' %}" class="contact-button">Зв'язатися</a>
+    </div>
+</footer>

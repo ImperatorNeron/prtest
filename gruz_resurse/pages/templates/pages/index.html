@@ -1,0 +1,221 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Golden Gruz
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'pages/css/index.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/introduction.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/semi-trailers-attention.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/index-collage.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+{% endblock %}
+{% block main %}
+<div class="collage">
+    <div class="swiper swiper-1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide blur-copy">
+                <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.jpg' %}">
+                <div class="item">
+                    <div class="title">Зернові напівпричепи</div>
+                    <div class="text">Виготовлення та продаж стандартних та індивідуально розроблених моделей з
+                        можливістю лізингу та trade-in.
+                    </div>
+                    <a href="{% url 'product' %}" class="find-out">Читати більше</a>
+                </div>
+            </div>
+            <div class="swiper-slide blur-copy">
+                <img src="{% static 'pages/images/photos/banners/repair.jpg' %}">
+                <div class="item">
+                    <div class="title">Обслуговування</div>
+                    <div class="text">Надання послуг з обслуговування, ремонту та встановлення гідравлічних
+                        систем самоскидів.
+                    </div>
+                    <a href="{% url 'attention' %}" class="find-out">Читати більше</a>
+                </div>
+            </div>
+            <div class="swiper-slide blur-copy">
+                <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.jpg' %}">
+                <div class="item">
+                    <div class="title">Перевезення</div>
+                    <div class="text">Перевезення наливних та небезпечних вантажів усіх видів, у тому числі ADR.
+                    </div>
+                    <a href="{% url 'danger' %}" class="find-out">Читати більше</a>
+                </div>
+            </div>
+            <div class="swiper-slide blur-copy">
+                <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.jpg' %}">
+                <div class="item">
+                    <div class="title">Продаж палива</div>
+                    <div class="text">Оптовий продаж якісного палива за привабливими цінами від виробника з ЄС.
+                    </div>
+                    <a href="{% url 'fuel' %}" class="find-out">Читати більше</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination copy-swiper-pagination"></div>
+    </div>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.jpg' %}"></div>
+            <div class="swiper-slide"><img src="{% static 'pages/images/photos/banners/repair.jpg' %}"></div>
+            <div class="swiper-slide"><img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_3.jpg' %}"></div>
+            <div class="swiper-slide"><img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.jpg' %}"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>
+<div class="introduction">
+    <div class="title">GOLDEN GRUZ - ваш надійний партнер у виготовленні та обладнанні напівпричепів
+    </div>
+    <div class="text">
+        Ми перспективна компанія, що займається продажем, виготовленням та ремонтом напівпричепів. Надаємо
+        комп'ютерну діагностику вантажівок та займаємося перевезення небезпечних вантажів. Гарантуємо
+        професіоналізм, високу
+        якість та безпеку в кожній нашій послузі.
+    </div>
+</div>
+<div class="advantages-block">
+    <div class="our-advantages-title">Наші переваги:</div>
+    <div class="advantages">
+        <div class="advantage">
+            <img src="{% static 'pages/images/icons/high-quality.png' %}" alt="" height="70" width="70">
+            <div class="text">Висока якість напівпричепів-зерновозів власного виробництва</div>
+        </div>
+        <div class="advantage">
+            <img src="{% static 'pages/images/icons/support.png' %}" alt="" height="70" width="70">
+            <div class="text">Консультування та підтримка клієнтів</div>
+        </div>
+        <div class="advantage">
+            <img src="{% static 'pages/images/icons/multiple.png' %}" alt="" height="70" width="70">
+            <div class="text">Великий вибір напівпричепів власного виробництва</div>
+        </div>
+        <div class="advantage">
+            <img src="{% static 'pages/images/icons/sketch.png' %}" alt="" height="70" width="70">
+            <div class="text">Виготовлення напівпричепів під індивідуальне замовлення</div>
+        </div>
+        <div class="advantage">
+            <img src="{% static 'pages/images/icons/wrench.png' %}" alt="" height="70" width="70">
+            <div class="text">Професійне та високотехнологічне обслуговування</div>
+        </div>
+        <div class="advantage">
+            <img src="{% static 'pages/images/icons/best-price.png' %}" alt="" height="70" width="70">
+            <div class="text">Приємні ціни</div>
+        </div>
+    </div>
+    <div class="add-title-1">Для наших клієнтів діє знижка у розмірі від 10% до 20% на обслуговування протягом
+        двох
+        років.
+    </div>
+    <div class="add-title-2">Для постійних клієнтів особливі умови!</div>
+</div>
+<div class="semi-trailer-container">
+    <div class="semi-trailer-blocks-wrapper">
+        <div class="semi-trailer-block-1">
+            <div class="title">
+                <div class="img-wrapper">
+                    <img src="{% static 'pages/images/icons/semi-trailer.png' %}" height="35" width="35">
+                </div>
+                <div class="text">Про обслуговування</div>
+            </div>
+            <div class="text">GOLDEN GRUZ - компанія, що займається виготовленням напівпричепів
+                зерновозів-самоскидів,
+                усиленням рам напівпричепів та виготовленням кузовів з використанням якісних конструкційних
+                сталей. Всі
+                зварні роботи виконуються промисловими напівавтоматами в середовищі захисних газів.
+            </div>
+            <img class="middle-img"
+                 src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.jpg' %}">
+            <div class="text">Крім того, GOLDEN GRUZ встановлює гідравлічні циліндри відомих брендів, ходову
+                частину
+                напівпричепа-причепа (осі), пневматику, електрику, допоміжні механізми для підйому осей,
+                автоматичні
+                замки воріт, люки для вивантаження зерна та обігрів кузова.
+            </div>
+            <img class="middle-img"
+                 src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_2.jpg' %}">
+            <div class="text">Компанія також пропонує виготовлення кузовів на замовлення на шасі клієнта.
+                Зверніться до
+                GOLDEN GRUZ для отримання професійних послуг з виготовлення транспортних засобів, що
+                задовольнять всі
+                ваші потреби. Компанія надає індивідуальний підхід до кожного клієнта, враховуючи всі його
+                побажання.
+            </div>
+            <div class="learn-about">
+                <b>Для більш детальної інформації</b>
+                <div class="learn-about-buttons">
+                    <a href="{% url 'contacts' %}">Зв'яжіться з нами</a>
+                    <a href="{% url 'attention' %}">Читати більше</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="business">
+    <div class="sales">
+        <div class="sales-help">
+            <div class="sales-title">Trade-in</div>
+            <div class="sales-text">Найкращі умови trade-in напівпричепів в нашій компанії. Отримайте
+                високу оцінку свого старого напівпричепу та вигідну знижку на нову модель. Оптимальний trade-in
+                для зернових напівпричепів - наш спеціалізований сервіс.
+            </div>
+            <a href="trade-in.html" class="sales-button">Переглянути</a>
+        </div>
+    </div>
+    <div class="leasing">
+        <div class="leasing-help">
+            <div class="leasing-title">Лізинг</div>
+            <div class="leasing-text">Доступні та зручні умови лізингу, що дозволяють отримати сучасну техніку
+                для перевезення зерна
+                без значних витрат на придбання власною технікою. Звертайтеся до нас і ви отримаєте усе найкраще
+                з індивідуальним підходом!
+            </div>
+            <a href="#" class="leasing-button">Відправити заявку</a>
+        </div>
+    </div>
+    <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.jpg' %}" alt="" class="photo"
+         height="400" width="400">
+</div>
+<div class="introduction">
+    <div class="title">Доставка небезпечних вантажів та оптовий продаж палива</div>
+    <div class="text">Також <b>Golden Gruz</b> - провідна компанія, яка спеціалізується на наданні якісних
+        послуг
+        з доставки
+        небезпечних вантажів по Європі та Україні. Ми маємо великий досвід у цій галузі та забезпечуємо
+        надійне
+        та безпечне перевезення небезпечних матеріалів згідно з усіма необхідними нормативними вимогами.
+    </div>
+    <div class="text">Наша компанія також спеціалізується на оптовому продажу палива класу Євро-5. Ми
+        пропонуємо
+        якісне паливо з Литви, яке відповідає найвищим екологічним та енергоефективним стандартам.
+    </div>
+</div>
+<div class="services-cards">
+    <div class="custom-cards">
+        <a class="custom-card" href="{% url 'danger' %}">
+            <div class="custom-card-img-wrapper">
+                <img class="custom-card-img" src="{% static 'pages/images/photos/banners/danger.jpg' %}" alt="">
+                <div class="overlay">
+                    <img src="{% static 'pages/images/icons/test.png' %}" class="icon" alt="" width="60">
+                    <div>Доставка небезпечних вантажів по Україні та Європі</div>
+                </div>
+            </div>
+        </a>
+        <a class="custom-card" href="{% url 'fuel' %}">
+            <div class="custom-card-img-wrapper">
+                <img class="custom-card-img" src="{% static 'pages/images/photos/banners/fuel.jpg' %}" alt="">
+                <div class="overlay">
+                    <img src="{% static 'pages/images/icons/petrol-station.png' %}" class="icon" alt="" width="60">
+                    <div>Оптовий продаж палива</div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="{% static 'pages/js/collage.js' %}"></script>
+{% endblock %}

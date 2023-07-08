@@ -1,0 +1,562 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Зерновози напівпричепи
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'pages/css/product.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/banner.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/introduction.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+{% endblock %}
+{% block main %}
+<img class="banner" src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_3.jpg' %}" alt="">
+<div class="tech-info-part-1">
+    <div class="introduction">
+        <div class="title">Зерновози напівпричепи від Golden Gruz</div>
+        <div class="text">
+            Ми з гордістю пропонуємо найкращі напівпричепи зерновози на ринку! Наші вироби відомі своєю високою
+            якістю, надійністю та оптимальною функціональністю. Ви маєте можливість купити готовий напівпричеп
+            або
+            замовити його виготовлення за вашими індивідуальними потребами. Крім того, ви маєте можливість разом із
+            напівпричепом придбати високоякісний
+            тягач і отримати інтегровану систему, що забезпечує безпроблемну роботу та максимальну ефективність вашого
+            транспортного флоту. Ми гарантуємо швидке виконання замовлення та конкурентні ціни з можливістю лізингу та
+            trade-in, що
+            робить наші напівпричепи доступними для широкого кола клієнтів.
+        </div>
+    </div>
+    <div class="trailers-photos-container">
+        <div class="gallery-container">
+            <div class="title">Напівпричепи зерновози від Golden Gruz</div>
+            <div class="border-element gallery-container-border"></div>
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide top">
+                        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_4.jpg' %}"/>
+                    </div>
+                    <div class="swiper-slide top">
+                        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_7.jpg' %}"/>
+                    </div>
+                    <div class="swiper-slide top">
+                        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_13.jpg' %}"/>
+                    </div>
+                    <div class="swiper-slide top">
+                        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_19.jpg' %}"/>
+                    </div>
+                    <div class="swiper-slide top">
+                        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_15.jpg' %}"/>
+                    </div>
+                    <div class="swiper-slide top">
+                        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_5.jpg' %}"/>
+                    </div>
+                    <div class="swiper-slide top">
+                        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_14.jpg' %}"/>
+                    </div>
+                    <div class="swiper-slide top">
+                        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_16.jpg' %}"/>
+                    </div>
+                    <div class="swiper-slide top">
+                        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.jpg' %}"/>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="down-swiper-wrapper">
+                <div thumbsSlider="" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide down">
+                            <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_4.jpg' %}"/>
+                        </div>
+                        <div class="swiper-slide down">
+                            <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_7.jpg' %}"/>
+                        </div>
+                        <div class="swiper-slide down">
+                            <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_13.jpg' %}"/>
+                        </div>
+                        <div class="swiper-slide down">
+                            <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_19.jpg' %}"/>
+                        </div>
+                        <div class="swiper-slide down">
+                            <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_15.jpg' %}"/>
+                        </div>
+                        <div class="swiper-slide down">
+                            <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_5.jpg' %}"/>
+                        </div>
+                        <div class="swiper-slide down">
+                            <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_14.jpg' %}"/>
+                        </div>
+                        <div class="swiper-slide down">
+                            <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_16.jpg' %}"/>
+                        </div>
+                        <div class="swiper-slide down">
+                            <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_1.jpg' %}"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="characteristics-block">
+        <div class="parameters">
+            <div class="p-title">
+                Технічні характеристики
+            </div>
+            <div class="border-element"></div>
+            <div class="par-block">
+                <div class="key-value">
+                    <div class="key">Повна маса</div>
+                    <div class="value">42 т</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Маса шасі</div>
+                    <div class="value">4630 кг</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Навантаження на седельно-зчіпний пристрій</div>
+                    <div class="value">15 т</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Навантаження на осі Ceylan</div>
+                    <div class="value">12 т</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Навантаження на осі SAF</div>
+                    <div class="value">9 т</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Висота лонжерона</div>
+                    <div class="value">495 мм</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Товщина лонжерона (стінка, верхня, нижня, посилення), мм</div>
+                    <div class="value">6 10 8 19</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Підвіска</div>
+                    <div class="value">Пневматична з автоматичним вирівнюванням пола</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Гальмівна система</div>
+                    <div class="value">KNORR BREMSE з системою EBS</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Висота за СЗП</div>
+                    <div class="value">1 200 мм</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Навантаження на опори BPW</div>
+                    <div class="value">24 т (50 ст. т.)</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Шини</div>
+                    <div class="value">385/65 R22.5</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Корзина для запасного колеса</div>
+                    <div class="value">1 шт</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Товщина бортів. Холоднокатаний лист</div>
+                    <div class="value">2 мм</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Товщина підлоги. Гарячекатаний лист</div>
+                    <div class="value">3 мм</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Об'єм</div>
+                    <div class="value">3 куб. м</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Гідроциліндр</div>
+                    <div class="value">HYVA</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Висота бортів</div>
+                    <div class="value">2800 мм</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Висота вантажу</div>
+                    <div class="value">2280 мм</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Тент Бельгія, ручний, відстань між перемичками</div>
+                    <div class="value">1300 мм</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Майданчик на задньому та передньому борту</div>
+                    <div class="value">+</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Задній борт орний двостулковий, шиберна засувка</div>
+                    <div class="value">+</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Внутрішня ширина</div>
+                    <div class="value">2430 мм</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Знімна верхня перемичка</div>
+                    <div class="value">+</div>
+                </div>
+            </div>
+        </div>
+        <div class="addition-parameters">
+            <div class="tabs">
+                <div class="tab active-tab">Рама</div>
+                <div class="tab-info tab-info-active">
+                    <ul>
+                        <li>сталева конструкція виготовлена з конструкційної сталі,</li>
+                        <li>посилена плита зчіпки з 2-дюймним королівським шворнем,</li>
+                        <li>опорні домкрати виробництва BPW (припустиме навантаження 50 т)</li>
+                    </ul>
+                </div>
+                <div class="tab">Шасі</div>
+                <div class="tab-info">
+                    <ul>
+                        <li>технічне навантаження осі до 9000 кг,</li>
+                        <li>підвіска пневматична з автоматичним вирівнюванням підлоги,</li>
+                        <li>шини Goodyear/ Bridgestone/ Continental/ Aplus, розмірності 385/65 R22,5</li>
+                        <li>повні підкрилки DOMAR (Італія) – 6 штук</li>
+                        <li>Кошик запасного колеса на 1 місце.</li>
+                    </ul>
+                </div>
+                <div class="tab">Тормозна система</div>
+                <div class="tab-info">
+                    <ul>
+                        <li>двопровідна пневматична з дисковими гальмами та з приводом на всі колеса,</li>
+                        <li>важелі розтискного кулака з автоматичним регулюванням зазору Knorr-Bremse,</li>
+                        <li>гальмо стоянки – пневматичний з приводом від енергоакумуляторів на дві осі,</li>
+                        <li>антиблокувальна система гальм EBS Knorr-Bremse.</li>
+                    </ul>
+                </div>
+                <div class="tab">Кузов</div>
+                <div class="tab-info">
+                    <ul>
+                        <li>вантажний кузов, виготовлений зі сталі підвищеної міцності,</li>
+                        <li>поміст на передній і задній стінці,</li>
+                        <li>задній затвор – це комбіновані двері-клапан, ущільнені гумовою прокладкою,</li>
+                        <li>гідравлічний циліндр HYVA вантажопідйомністю 42 т,</li>
+                        <li>тент скочується в бічну сторону і натягується ременями.</li>
+                    </ul>
+                </div>
+                <div class="tab">Електроніка</div>
+                <div class="tab-info">
+                    <ul>
+                        <li>24 V, що відповідає правилам ECE та ADR, задні ліхтарі об'єднані з ліхтарем заднього
+                            ходу, протитуманною фарою, покажчиками повороту, а також трикутниками відображення
+                            світла, освітлення номерного знака, габаритні вогні, бічне освітлення,
+                            світловідбиваючі
+                            щити, 2 EBS розміщено на передній стіні без з'єднувальних дротів.
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab">Колір</div>
+                <div class="tab-info">
+                    <ul>
+                        <li>
+                            Всі сталеві елементи перед фарбуванням були піддані
+                            дробоструминному/піскоструминному
+                            очищенню, нанесення ЛКП в фарбувальній камері, колір на вибір замовника за каталогом
+                            RAL
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab">Дод. оснащення</div>
+                <div class="tab-info">
+                    <ul>
+                        <li>два клини з кріпленням,</li>
+                        <li>бічний протипідкатний захист, що відповідає вимогам ECE,</li>
+                        <li>задній захист, який відповідає вимогам ECE.</li>
+                    </ul>
+                </div>
+                <div class="tab">Опції</div>
+                <div class="tab-info">
+                    <ul>
+                        Осі SAF, ємність для води (керомийник), ящик для інструментів, перша підйомна (друга)
+                        вісь, замок Hyfix, манометр тиску, бічні двері, підйомний задній захист, дискові гальма
+                        Mustafa Ceylan/SAF.
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="tech-info-part-2">
+    <div class="introduction">
+        <div class="title">Напівпричеп-зерновози "Контейнеровоз"</div>
+        <div class="text">
+            Ми пропонуємо вам надійний напівпричіп-зерновоз зі сталевим кузовом, який відрізняється високою
+            якістю і
+            невибагливістю в експлуатації.
+
+            Кузов забезпечений контейнерними замками, що дозволяє, згідно з Правилами дорожнього руху, збільшити
+            масу автопоїзда до 44 тонн (звичайний автопоїзд - 40 тонн).
+        </div>
+    </div>
+    <div class="trailers-photos-container">
+        <div class="gallery-container">
+            <div class="title">Напівпричепи зерновози від Golden Gruz</div>
+            <div class="border-element gallery-container-border"></div>
+            <div class="swiper mySwiper3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide top">
+                        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_2.jpg' %}"/>
+                    </div>
+                    <div class="swiper-slide top">
+                        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_9.jpg' %}"/>
+                    </div>
+                    <div class="swiper-slide top">
+                        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_3.jpg' %}"/>
+                    </div>
+                    <div class="swiper-slide top">
+                        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_6.jpg' %}"/>
+                    </div>
+                    <div class="swiper-slide top">
+                        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_8.jpg' %}"/>
+                    </div>
+                    <div class="swiper-slide top">
+                        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_10.jpg' %}"/>
+                    </div>
+                    <div class="swiper-slide top">
+                        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_11.jpg' %}"/>
+                    </div>
+                    <div class="swiper-slide top">
+                        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_12.jpg' %}"/>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="down-swiper-wrapper">
+                <div thumbsSlider="" class="swiper mySwiper4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide down">
+                            <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_2.jpg' %}"/>
+                        </div>
+                        <div class="swiper-slide down">
+                            <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_9.jpg' %}"/>
+                        </div>
+                        <div class="swiper-slide down">
+                            <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_3.jpg' %}"/>
+                        </div>
+                        <div class="swiper-slide down">
+                            <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_6.jpg' %}"/>
+                        </div>
+                        <div class="swiper-slide down">
+                            <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_8.jpg' %}"/>
+                        </div>
+                        <div class="swiper-slide down">
+                            <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_10.jpg' %}"/>
+                        </div>
+                        <div class="swiper-slide down">
+                            <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_11.jpg' %}"/>
+                        </div>
+                        <div class="swiper-slide down">
+                            <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_12.jpg' %}"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="characteristics-block">
+        <div class="parameters">
+            <div class="p-title">
+                Технічні характеристики
+            </div>
+            <div class="border-element"></div>
+            <div class="par-block">
+                <div class="key-value">
+                    <div class="key">Повна маса</div>
+                    <div class="value">43000 кг</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Власна маса</div>
+                    <div class="value">7600 кг</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Вантажопідйомність</div>
+                    <div class="value">до 32000 кг</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Об'єм кузова</div>
+                    <div class="value">50 куб. м</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">ДхШхВ, м</div>
+                    <div class="value">10,4х2,5х3,7</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Навантаження на ССУ</div>
+                    <div class="value">12000 кг</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Висота до ССУ</div>
+                    <div class="value">1,25 м</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Міжосьова відстань</div>
+                    <div class="value">1360 мм</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Колісна колія</div>
+                    <div class="value">2040 мм</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="tech-info-part-3">
+    <div class="introduction">
+        <div class="title">Напівпричеп-зерновози з алюмінієвим кузовом</div>
+        <div class="text">
+            Наш полупричіп призначений для перевезення сипучих вантажів, опилок, соломи, зерна, добрив, відходів
+            та
+            інших вантажів. Головною перевагою алюмінієвої техніки є низька вага, що дозволяє перевозити на 2
+            тонни
+            більше, ніж сталеві напівпричепи. Ще одним важливим аспектом є захист від корозії. Полупричіп
+            призначений для використання з седельним тягачем 4х2, 6х2, 6х4, з висотою седельно-зчіпного пристрою
+            1150/1300 мм і навантаженням менше 11-18 тонн. Розвантаження відбувається з одного боку (НАЗАД) під
+            кутом 45 градусів.
+        </div>
+    </div>
+    <div class="trailers-photos-container">
+        <div class="gallery-container">
+            <div class="title">Напівпричепи зерновози від Golden Gruz</div>
+            <div class="border-element gallery-container-border"></div>
+            <div class="swiper mySwiper5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide top">
+                        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_18.jpg' %}"/>
+                    </div>
+                    <div class="swiper-slide top">
+                        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_20.jpg' %}"/>
+                    </div>
+                    <div class="swiper-slide top">
+                        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_17.jpg' %}"/>
+                    </div>
+                    <div class="swiper-slide top">
+                        <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_21.jpg' %}"/>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="down-swiper-wrapper">
+                <div thumbsSlider="" class="swiper mySwiper6">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide down">
+                            <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_18.jpg' %}"/>
+                        </div>
+                        <div class="swiper-slide down">
+                            <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_20.jpg' %}"/>
+                        </div>
+                        <div class="swiper-slide down">
+                            <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_17.jpg' %}"/>
+                        </div>
+                        <div class="swiper-slide down">
+                            <img src="{% static 'pages/images/photos/semi_trailers_and_trucks/semi_trailer_21.jpg' %}"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="characteristics-block">
+        <div class="parameters">
+            <div class="p-title">
+                Технічні характеристики
+            </div>
+            <div class="border-element"></div>
+            <div class="par-block">
+                <div class="key-value">
+                    <div class="key">Повна маса, кг</div>
+                    <div class="value">39000</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Вантажопідйомність, кг</div>
+                    <div class="value">32000</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Власна маса, кг</div>
+                    <div class="value">7000</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Навантажувальна довжина, мм</div>
+                    <div class="value">9900</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Міжосьова відстань, мм</div>
+                    <div class="value">1310</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Навантаження на сідельно-зчіпне устр-во (РСУ), кг</div>
+                    <div class="value">12000</div>
+                </div>
+                <div class="key-value">
+                    <div class="key">Колісна колія, мм</div>
+                    <div class="value">2040</div>
+                </div>
+            </div>
+        </div>
+        <div class="addition-parameters">
+            <div class="second-tabs tabs">
+                <div class="second-tab second-active-tab">Шасі</div>
+                <div class="second-tab-info second-tab-info-active">
+                    <ul>
+                        Шасі виготовлені з конструкційної сталі S355, допустиме навантаження на вісь 9 тонн, осі
+                        SAF INTRA DISC Custom Desigh з дисковим гальмом і посиленим підшипниковим вузлом,
+                        підвіска пневматична з автоматичним вирівнюванням підлоги, плита зчеплення з 2-дюймовим
+                        шкворнем захист, що відповідає вимогам ECE, задній захист, що відповідає вимогам ECE.
+                        Колеса 7 шт. сталеві обода, шини 385/65 R22,5”.
+                    </ul>
+                </div>
+                <div class="second-tab">Гальмівна система</div>
+                <div class="second-tab-info">
+                    <ul>
+                        Відповідає вимогам ECE. Автоматичне регулювання гальм, антиблокувальна система EBS фірми
+                        KNORR-BREMSE.
+                    </ul>
+                </div>
+                <div class="second-tab">Електроніка</div>
+                <div class="second-tab-info">
+                    <ul>
+                        24 V, відповідає правилам ECE та ADR, задні ліхтарі об'єднані з ліхтарем заднього ходу,
+                        протитуманною фарою, покажчиками повороту, а також трикутниками відбиття світла.
+                        Освітлення номерного знака, габаритні вогні, бічне освітлення, світловідбиваючі щити, 2
+                        розетки, а також розетки EBS розміщені на передній стіні без проводів.
+                    </ul>
+                </div>
+                <div class="second-tab">Колір</div>
+                <div class="second-tab-info">
+                    <ul>
+                        Всі сталеві елементи перед фарбуванням були піддані дробоструминному/піскоструминному
+                        очищенню, нанесення ЛКП в фарбувальній камері, колір на вибір замовника за каталогом RAL
+                    </ul>
+                </div>
+                <div class="second-tab">Дод. оснащення</div>
+                <div class="second-tab-info">
+                    <ul>
+                        Ємність для води (румийник), ящик для інструментів, манометр тиску, 2 клина з
+                        кріпленням, 6 повних крил, перша підйомна вісь, замок Hyfix.
+                    </ul>
+                </div>
+                <div class="second-tab">Опції</div>
+                <div class="second-tab-info">
+                    <ul>
+                        Підйомна друга вісь, система контролю навантаження на осі, дод. кошик запасного колеса.
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="{% static 'pages/js/swipers.js' %}"></script>
+<script src="{% static 'pages/js/parameters_table.js' %}"></script>
+{% endblock %}

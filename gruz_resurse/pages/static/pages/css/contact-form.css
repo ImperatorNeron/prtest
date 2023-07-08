@@ -1,0 +1,135 @@
+.form-container {
+    display: flex;
+    gap: 70px;
+    padding: 70px 150px 100px 150px;
+}
+
+.left-part {
+    flex: 2;
+}
+
+.left-part .title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.left-part .text{
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+.right-part {
+    flex: 5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(219, 219, 219);
+    font-size: 16px;
+    background-color: transparent;
+}
+
+textarea {
+    min-height: 150px;
+    width: 100%;
+    resize: vertical;
+}
+
+.custom-btn {
+    width: 50%;
+    background-color: rgb(129, 129, 129);
+    padding: 10px 0;
+    margin-top: 20px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.custom-btn:hover {
+    background-color: rgb(157, 157, 157);
+    transition-duration: 0.3s;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.f-4 {
+    cursor: pointer;
+    text-align: center;
+    transition-duration: 0.3s;
+}
+
+.f-4:hover {
+    border-color: rgb(44, 44, 44);
+    transition-duration: 0.3s;
+}
+
+.errorlist li{
+    color: red;
+}
+
+.error-block{
+    width: 100%;
+}
+
+.message-to-user {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+    z-index: 2;
+}
+
+@media (max-width: 1279px) {
+    .form-container {
+        padding: 0 70px 100px 70px;
+    }
+}
+
+@media (max-width: 1079px) {
+    .form-container{
+        padding: 0 15px 55px 15px;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 420px) {
+    .left-part .title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 350px){
+
+    .form-container{
+        padding: 0 15px 100px 15px;
+    }
+
+    .left-part .title{
+        font-size: 1.4rem;
+    }
+
+    .custom-btn{
+        width: 90%;
+    }
+}
