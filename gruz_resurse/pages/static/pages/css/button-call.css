@@ -18,22 +18,9 @@
     border: 0;
 }
 
-.pulse{
-    animation: pulse 1.5s infinite;
-}
+
 
 .fixed-icon img {
     filter: invert(1);
 }
 
-@keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(185, 185, 185, 0.8);
-    }
-    50% {
-        box-shadow: 0 0 0 15px rgba(185, 185, 185, 0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(185, 185, 185, 0);
-    }
-}
