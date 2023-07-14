@@ -40,7 +40,7 @@ class ContactForm(forms.Form):
         widget=forms.Textarea(
             attrs={
                 "class": "form-field",
-                "placeholder": "{{ textarea_text }}",
+                "placeholder": "Ваші питання, пропозиції тощо",
             }
         ),
         error_messages={"required": "Це поле обов'язкове"},
@@ -58,7 +58,6 @@ class ContactForm(forms.Form):
 
     def clean_photos(self):
         photos = self.cleaned_data.get("photos")
-
         for photo in photos:
             file_extension = os.path.splitext(photo.name)[1].lower()
 
@@ -68,3 +67,52 @@ class ContactForm(forms.Form):
                 )
 
         return photos
+
+
+class FeedbackForm(forms.Form):
+    name = forms.CharField(
+        max_length=255,
+        widget=forms.TextInput(
+            attrs={
+                "class": "form-field",
+                "placeholder": "Ваше ім'я",
+            }
+        ),
+        error_messages={"required": "Це поле обов'язкове"},
+    )
+    email = forms.EmailField(
+        max_length=255,
+        widget=forms.EmailInput(
+            attrs={
+                "class": "form-field",
+                "placeholder": "Email",
+            }
+        ),
+        required=False
+    )
+    phone_number = forms.RegexField(
+        regex=r"^\+?1?\d{9,15}$",
+        widget=forms.TextInput(
+            attrs={
+                "class": "form-field",
+                "placeholder": "Номер телефону",
+            }
+        ),
+        error_messages={"invalid": "Введіть правильний номер телефону!"},
+    )
+    time_range_1 = forms.IntegerField(
+        widget=forms.NumberInput(attrs={'type': 'range',
+                                        'min': '0',
+                                        'max': '720',
+                                        'value': '120',
+                                        'step': '60',
+                                        'id': 'slider-1',
+                                        'oninput': 'slideOne()', }))
+    time_range_2 = forms.IntegerField(
+        widget=forms.NumberInput(attrs={'type': 'range',
+                                        'min': '0',
+                                        'max': '720',
+                                        'value': '360',
+                                        'step': '60',
+                                        'id': 'slider-2',
+                                        'oninput': 'slideTwo()', }))

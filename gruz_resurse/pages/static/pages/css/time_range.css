@@ -1,0 +1,113 @@
+.my-slider-wrapper{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.my-slider-container{
+    position: relative;
+    height: 100px;
+}
+
+.my-slider-track{
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background: black;
+}
+
+input[type="range"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    outline: none;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.my-slider-container input{
+    color: black;
+}
+
+input[type="range"]::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    height: 4px;
+}
+input[type="range"]::-moz-range-track{
+    -moz-appearance: none;
+    height: 4px;
+}
+input[type="range"]::-ms-track{
+    appearance: none;
+    height: 4px;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 1.4em;
+    width: 1.4em;
+    background-color: black;
+    cursor: pointer;
+    margin-top: -9.5px;
+    pointer-events: auto;
+    border-radius: 50%;
+}
+input[type="range"]::-moz-range-thumb{
+    -webkit-appearance: none;
+    height: 1.4em;
+    width: 1.4em;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: black;
+    pointer-events: auto;
+    margin-top: -9.5px;
+}
+input[type="range"]::-ms-thumb{
+    appearance: none;
+    height: 1.4em;
+    width: 1.4em;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: black;
+    pointer-events: auto;
+    margin-top: -9.5px;
+}
+input[type="range"]:active::-webkit-slider-thumb{
+    background-color: rgb(227, 227, 227);
+    border: 4px solid black;
+}
+
+.values{
+    width: 100%;
+    position: relative;
+    margin: auto;
+    padding: 10px 0;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.time-parameters{
+    display: flex;
+    width: 100%;
+    margin: 10px 0 -20px 0;
+}
+
+.time-wrapper{
+    font-size: 0.85rem;
+    flex: 1;
+    text-align: center;
+}
+
+@media (max-width: 520px){
+    .my-slider-container{
+        margin: 0;
+    }
+}

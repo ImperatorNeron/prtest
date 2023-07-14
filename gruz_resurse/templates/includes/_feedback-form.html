@@ -1,0 +1,56 @@
+{% load static %}
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Форма зворотнього зв'язку</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form method="post" class="feedback-form">
+                    {% csrf_token %}
+                    {{ feedback_form.name }}
+                    <div class="error-block">{{ feedback_form.name.errors }}</div>
+                    {{ feedback_form.email }}
+                    <div class="error-block">{{ feedback_form.email.errors }}</div>
+                    {{ feedback_form.phone_number }}
+                    <div class="error-block">{{ feedback_form.phone_number.errors }}</div>
+                    <div class="my-slider-wrapper">
+                        <div class="values">
+                            Замовити дзвінок в період від
+                            <span id="range1">0</span>
+                            до
+                            <span id="range2">100</span>
+                        </div>
+                        <div class="time-parameters">
+                            <div class="time-wrapper">
+                                <div class="time" style="margin-right: -14px">10:00</div>
+                            </div>
+                            <div class="time-wrapper">
+                                <div class="time">14:00</div>
+                            </div>
+                            <div class="time-wrapper">
+                                <div class="time" style="margin-left: -14px">18:00</div>
+                            </div>
+                        </div>
+                        <div class="my-slider-container">
+                            <div class="my-slider-track"></div>
+                            {{ feedback_form.time_range_1 }}
+                            {{ feedback_form.time_range_2 }}
+                            <div class="error-block">{{ feedback_form.time_range_1.errors }}</div>
+                            <div class="error-block">{{ feedback_form.time_range_2.errors }}</div>
+                        </div>
+                    </div>
+                    <button class="custom-btn" type="submit" name="feedback_form">Відправити</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
