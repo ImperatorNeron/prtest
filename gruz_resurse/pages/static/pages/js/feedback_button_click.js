@@ -11,8 +11,8 @@ function moveButtons() {
 
   if (!buttonsMoved) {
     // Move the buttons to new positions
-    firstButton.style.display = "flex";
-    secondButton.style.display = "flex";
+    firstButton.style.display = 'bottom 0.3s ease';
+    secondButton.style.display = 'bottom 0.3s ease';
     firstButton.style.bottom = '85px';
     secondButton.style.bottom = '150px';
     buttonsMoved = true; // Set the flag indicating that the buttons have been moved
@@ -21,8 +21,8 @@ function moveButtons() {
     zero_button.classList.remove('pulse');
   } else {
     // Move the buttons back to the original positions
-    firstButton.style.display = "none";
-    secondButton.style.display = "none";
+    firstButton.style.transition = 'bottom 0.1s ease';
+    secondButton.style.transition = 'bottom 0.1s ease';
     firstButton.style.bottom = '20px';
     secondButton.style.bottom = '20px';
     buttonsMoved = false; // Reset the flag indicating the buttons' movement
