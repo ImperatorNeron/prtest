@@ -4,10 +4,10 @@
 Golden Gruz
 {% endblock %}
 {% block css %}
-<link rel="stylesheet" href="{% static 'pages/css/index.css' %}">
-<link rel="stylesheet" href="{% static 'pages/css/introduction.css' %}">
-<link rel="stylesheet" href="{% static 'pages/css/semi-trailers-attention.css' %}">
-<link rel="stylesheet" href="{% static 'pages/css/index-collage.css' %}">
+<link rel="stylesheet" href="{% static 'pages/css/index.css' %}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{% static 'pages/css/introduction.css' %}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{% static 'pages/css/semi-trailers-attention.css' %}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{% static 'pages/css/index-collage.css' %}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 {% endblock %}
 {% block main %}
