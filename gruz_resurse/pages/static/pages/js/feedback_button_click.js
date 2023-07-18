@@ -11,8 +11,8 @@ function moveButtons() {
 
   if (!buttonsMoved) {
     // Move the buttons to new positions
-    firstButton.style.display = 'bottom 0.3s ease';
-    secondButton.style.display = 'bottom 0.3s ease';
+    firstButton.style.transition = 'bottom 0.3s ease';
+    secondButton.style.transition = 'bottom 0.3s ease';
     firstButton.style.bottom = '85px';
     secondButton.style.bottom = '150px';
     buttonsMoved = true; // Set the flag indicating that the buttons have been moved
